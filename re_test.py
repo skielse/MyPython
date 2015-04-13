@@ -1,4 +1,4 @@
-# coding:utf-8
+# -*- coding: utf-8 -*-
 __author__ = 'wangzijie'
 import re
 # 匹配如下内容：单词+空格+单词+任意字符
