@@ -28,7 +28,7 @@ class QSBK:
 			return pageCode
 		except urllib2.URLError, e:
 			if hasattr(e, "reason"):
-				print u"连接糗事百科失败，错误原因：", e.reason
+				print "连接糗事百科失败，错误原因：", e.reason
 				return None
 
 	# 传入某一页代码，返回本页不带图片的段子列表
@@ -78,11 +78,11 @@ class QSBK:
 			if input == "Q":
 				self.enable = False
 				return
-			print u"第%d页\t发布人:%s\t发布时间:%s\n%s\n赞:%s\n" % (page, story[0], story[1], story[2], story[3])
+			print "第%d页\t发布人:%s\t发布时间:%s\n%s\n赞:%s\n" % (page, story[0], story[1], story[2], story[3])
 
 	# 开始方法
 	def start(self):
-		print u"正在读取糗事百科,按回车查看新段子，Q退出"
+		print "正在读取糗事百科,按回车查看新段子，Q退出"
 		# 使变量为True，程序可以正常运行
 		self.enable = True
 		# 先加载一页内容
