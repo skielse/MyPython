@@ -82,7 +82,7 @@ class QSBK:
 
 	# 开始方法
 	def start(self):
-		print "正在读取糗事百科,按回车查看新段子，Q退出"
+		print "正在读取糗事百科,按回车查看新段子，按Q退出"
 		# 使变量为True，程序可以正常运行
 		self.enable = True
 		# 先加载一页内容
